@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is It Crypto</title>
+</head>
+
+<body>
+    <ul>
+        <% cryptoData.forEach(function(crypto) { %>
+        <li>
+            <%= crypto.code %> - <%= crypto.name %>:
+
+            <% if (crypto.is_crypto) { %>
+
+            <% } else { %>
+
+            <% } %>
+        </li>
+        <% }); %>
+    </ul>
+</body>
+
+</html>
