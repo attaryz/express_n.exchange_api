@@ -10,13 +10,12 @@
 <body>
     <ul>
         <% cryptoData.forEach(function(crypto) { %>
-        <li>
-            <%= crypto.code %> - <%= crypto.name %>:
+        <li><%= crypto.code %> - <%= crypto.name %>:
 
             <% if (crypto.is_crypto) { %>
-
+            ✅
             <% } else { %>
-
+            ❌
             <% } %>
         </li>
         <% }); %>
